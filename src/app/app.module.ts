@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ResponsiveCardComponent } from './responsive-card/responsive-card.component';
 import { SideNavbarComponent } from './side-navbar/side-navbar.component';
 import { CarouselImageComponent } from './carousel-image/carousel-image.component';
+import { CustomTabComponent } from './custom-tab/custom-tab.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CarouselImageComponent } from './carousel-image/carousel-image.componen
     NavbarComponent,
     FooterComponent,
     ResponsiveCardComponent,
-    CarouselImageComponent
+    CarouselImageComponent,
+    CustomTabComponent
   ],
   imports: [
     BrowserModule,
