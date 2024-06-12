@@ -1,0 +1,47 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+
+    a {
+        display: block;
+        height: 70px;
+        width: 220px;
+        background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfc, #44ce7b);
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+
+        span {
+            height: 88%;
+            width: 96%;
+            background: #111;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            line-height: 62px;
+            color: #fff;
+            font-size: 25px;
+
+        }
+
+        span:hover {
+            animation: animate 0.4s linear infinite;
+        }
+    }
+}
+
+.btn a:hover {
+    animation: animate 0.4s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(-360deg);
+    }
+}

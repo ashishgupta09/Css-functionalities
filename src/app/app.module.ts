@@ -11,6 +11,8 @@ import { ResponsiveCardComponent } from './responsive-card/responsive-card.compo
 import { SideNavbarComponent } from './side-navbar/side-navbar.component';
 import { CarouselImageComponent } from './carousel-image/carousel-image.component';
 import { CustomTabComponent } from './custom-tab/custom-tab.component';
+import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
+import { ColorAnimationButtonComponent } from './color-animation-button/color-animation-button.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CustomTabComponent } from './custom-tab/custom-tab.component';
     FooterComponent,
     ResponsiveCardComponent,
     CarouselImageComponent,
-    CustomTabComponent
+    CustomTabComponent,
+    LoadingAnimationComponent,
+    ColorAnimationButtonComponent
   ],
   imports: [
     BrowserModule,
