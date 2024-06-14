@@ -1,0 +1,18 @@
+.conatiner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+
+    h1{
+        font-size: 80px;
+        
+        .text{
+            color: yellow;
+            text-transform: capitalize;
+        }
+    }
+}
+

@@ -1,0 +1,17 @@
+.text {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    font-weight: 600;
+    font-size: 110px;
+    text-transform:uppercase;
+    animation: grade 10s linear infinite ;
+    --webkit-background-clip:text;
+    background: linear-gradient(135deg,#5335cf 0%, #de005e 25%, #f66e48 50% , #de005e 75%,  #5335cf 100%);
+}
+
+@keyframes grade {
+    100%{
+        background-position: 400%;
+    }
+}

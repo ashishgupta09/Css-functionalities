@@ -13,6 +13,8 @@ import { CarouselImageComponent } from './carousel-image/carousel-image.componen
 import { CustomTabComponent } from './custom-tab/custom-tab.component';
 import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
 import { ColorAnimationButtonComponent } from './color-animation-button/color-animation-button.component';
+import { AnimatedTextComponent } from './animated-text/animated-text.component';
+import { GradientTextComponent } from './gradient-text/gradient-text.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ColorAnimationButtonComponent } from './color-animation-button/color-an
     CarouselImageComponent,
     CustomTabComponent,
     LoadingAnimationComponent,
-    ColorAnimationButtonComponent
+    ColorAnimationButtonComponent,
+    AnimatedTextComponent,
+    GradientTextComponent
   ],
   imports: [
     BrowserModule,
