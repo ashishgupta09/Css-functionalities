@@ -13,15 +13,15 @@ interface SideNavToggle {
 export class SideNavbarComponent implements OnInit {
 
   @Output() onToggleSidenav: EventEmitter<SideNavToggle> = new EventEmitter()
-  collapse: boolean = true;
+  collapesed: boolean = true;
   screenWidth: number = 0;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.screenWidth = window.innerWidth;
     if (this.screenWidth <= 768) {
-      this.collapse = false;
-      this.onToggleSidenav.emit({ collapesed: this.collapse, screenWidth: this.screenWidth })
+      this.collapesed = false;
+      this.onToggleSidenav.emit({ collapesed: this.collapesed, screenWidth: this.screenWidth })
     }
   }
 
@@ -29,8 +29,17 @@ export class SideNavbarComponent implements OnInit {
     this.screenWidth = window.innerWidth;
   }
 
-
   navData = [
+    {
+      routeLink: 'card',
+      icon: 'fa-solid fa-house',
+      label: 'card'
+    },
+    {
+      routeLink: 'card',
+      icon: 'fa-solid fa-house',
+      label: 'card'
+    },
     {
       routeLink: 'card',
       icon: 'fa-solid fa-house',
@@ -39,13 +48,13 @@ export class SideNavbarComponent implements OnInit {
   ]
 
   closeSidenav() {
-    this.collapse = false;
-    this.onToggleSidenav.emit({ collapesed: this.collapse, screenWidth: this.screenWidth })
+    this.collapesed = false;
+    this.onToggleSidenav.emit({ collapesed: this.collapesed, screenWidth: this.screenWidth })
   }
 
   toggleCollapse() {
-    this.collapse = !this.collapse;
-    this.onToggleSidenav.emit({ collapesed: this.collapse, screenWidth: this.screenWidth })
+    this.collapesed = !this.collapesed;
+    this.onToggleSidenav.emit({ collapesed: this.collapesed, screenWidth: this.screenWidth })
   }
 
 }

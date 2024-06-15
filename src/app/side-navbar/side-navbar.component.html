@@ -1,19 +1,19 @@
-<div class="sidenav" [ngClass]="collapse ? '' : 'sidenav-collapses' ">
+<div class="sidenav" [ngClass]="collapesed ? '' : 'sidenav-collapses' ">
     <div class="log-conatainer">
         <button class="log" (click)="toggleCollapse()">A</button>
-        <div class="logo-text" *ngIf="collapse">Angular</div>
-        <button class="btn-close" *ngIf="collapse" (click)="closeSidenav()">
+        <div class="logo-text" *ngIf="collapesed">Angular</div>
+        <button class="btn-close" *ngIf="collapesed" (click)="closeSidenav()">
             <i class="fal fa-times close-icon"></i>
         </button>
     </div>
     <ul class="sidenav-nav">
         <li class="sidenav-nav-item" *ngFor="let data of navData">
             <a class="sidenav-nav-link" [routerLink]="[data.routeLink]"
-             routerLink="active"
-             routerLinkActiveOptions="{exact:true}"
+             routerLinkActive="active"
+             [routerLinkActiveOptions]="{exact:true}"
             >
                 <i class="sidenav-icon-link" [class]="data.icon"></i>
-                <span class="sidenav-link-text" *ngIf="collapse">{{data.label}}</span>
+                <span class="sidenav-link-text" *ngIf="collapesed">{{data.label}}</span>
             </a>
         </li>
     </ul>
