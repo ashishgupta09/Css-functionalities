@@ -36,12 +36,12 @@ export class SideNavbarComponent implements OnInit {
       label: 'card'
     },
     {
-      routeLink: 'card',
+      routeLink: 'form',
       icon: 'fa-solid fa-house',
       label: 'card'
     },
     {
-      routeLink: 'card',
+      routeLink: 'animated',
       icon: 'fa-solid fa-house',
       label: 'card'
     }
