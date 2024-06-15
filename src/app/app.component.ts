@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+interface SideNavToggle {
+  screenWidth: number;
+  collapesed: boolean;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,9 +15,10 @@ export class AppComponent {
   title = 'webpages';
   myForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder) { }
 
-  ngOnInit() {[]
+  ngOnInit() {
+    []
     this.myForm = this.fb.group({
       users: this.fb.array([])
     });
@@ -27,12 +33,12 @@ export class AppComponent {
       // You can handle error messages or any other actions for invalid form here.
     }
   }
-  
-  
+
+
   get users() {
     return this.myForm.get('users') as FormArray;
   }
-   
+
   createUser(): FormGroup {
     return this.fb.group({
       name: ['', Validators.required],
@@ -40,7 +46,7 @@ export class AppComponent {
       password: ['', [Validators.required, Validators.minLength(6)]]
     });
   }
-  
+
   addUser() {
     this.users.push(this.createUser());
   }
@@ -48,5 +54,16 @@ export class AppComponent {
   removeUser(index: number) {
     this.users.removeAt(index);
   }
-  
+
+  // for sidenavbar
+
+
+  isSideNavCollaped: boolean = false;
+  screenWidth: number = 0;
+
+  onToggleSidenav(data: SideNavToggle) {
+    this.screenWidth = data.screenWidth;
+    this.isSideNavCollaped = data.collapesed;
+  }
+
 }

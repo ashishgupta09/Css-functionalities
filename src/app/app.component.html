@@ -1,1 +1,6 @@
-<app-gradient-text></app-gradient-text>
+<app-side-navbar (onToggleSidenav)="onToggleSidenav($event)"></app-side-navbar>
+<app-sidenav-body
+    [collapse]="isSideNavCollaped" 
+    [secreenWidth]="screenWidth"
+    >
+</app-sidenav-body>

@@ -15,6 +15,7 @@ import { LoadingAnimationComponent } from './loading-animation/loading-animation
 import { ColorAnimationButtonComponent } from './color-animation-button/color-animation-button.component';
 import { AnimatedTextComponent } from './animated-text/animated-text.component';
 import { GradientTextComponent } from './gradient-text/gradient-text.component';
+import { SidenavBodyComponent } from './sidenav-body/sidenav-body.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { GradientTextComponent } from './gradient-text/gradient-text.component';
     LoadingAnimationComponent,
     ColorAnimationButtonComponent,
     AnimatedTextComponent,
-    GradientTextComponent
+    GradientTextComponent,
+    SidenavBodyComponent
   ],
   imports: [
     BrowserModule,
