@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="accordion" *ngFor="let a of Data;let i = index">
+        <div class="accordion-header" (click)="accordionBody(i)">
+            <h2>{{a.title}}</h2>
+        </div>
+        <div class="accordion-body" [ngClass]="{'active': toggleAccordian === i}">
+            <p>{{a.body}}</p>
+        </div>
+    </div>
+</div>

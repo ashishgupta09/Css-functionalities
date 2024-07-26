@@ -4,12 +4,14 @@ import { ResponsiveCardComponent } from './responsive-card/responsive-card.compo
 import { AnimatedTextComponent } from './animated-text/animated-text.component';
 import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 const routes: Routes = [
   {path:'card',component:ResponsiveCardComponent},
   {path:'animated',component:AnimatedTextComponent},
   {path:'form',component:FormComponent},
   {path:'footer',component:FooterComponent},
+  {path:'accordion',component:AccordionComponent},
 ];
 
 @NgModule({
