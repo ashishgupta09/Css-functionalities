@@ -15,9 +15,9 @@ export class AnimatedTextComponent implements OnInit {
   animationTest() {
     let type = new Typed(".text", {
       strings: ['Designer', 'Developer', 'Android', 'Frontent'],
-      typeSpeed:200,
-      backSpeed:200,
-      loop:true,
+      typeSpeed: 200,
+      backSpeed: 200,
+      loop: true,
     })
   }
 }
