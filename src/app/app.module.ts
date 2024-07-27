@@ -16,6 +16,8 @@ import { HeaderComponent } from './header/header.component';
 import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ResponsiveCardComponent } from './responsive-card/responsive-card.component';
+import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
+import { InputSearchBoxComponent } from './input-search-box/input-search-box.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ResponsiveCardComponent } from './responsive-card/responsive-card.compo
     AnimatedTextComponent,
     GradientTextComponent,
     AccordionComponent,
-    HeaderComponent
+    HeaderComponent,
+    ToggleButtonComponent,
+    InputSearchBoxComponent
   ],
   imports: [
     BrowserModule,

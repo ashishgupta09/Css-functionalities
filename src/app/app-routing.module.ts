@@ -6,6 +6,8 @@ import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { HeaderComponent } from './header/header.component';
+import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
+import { InputSearchBoxComponent } from './input-search-box/input-search-box.component';
 
 const routes: Routes = [
   {path:'card',component:ResponsiveCardComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path:'footer',component:FooterComponent},
   {path:'accordion',component:AccordionComponent},
   {path:'header',component:HeaderComponent},
+  {path:'toggle',component:ToggleButtonComponent},
+  {path:'input-search',component:InputSearchBoxComponent},
 ];
 
 @NgModule({
