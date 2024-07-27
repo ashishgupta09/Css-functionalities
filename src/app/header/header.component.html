@@ -1,0 +1,21 @@
+<header class="container">
+    <nav class="navbar">
+        <div class="main">
+            <h1>Technology World</h1>
+            <div class="ham-burgur" (click)="toggleNavbar()">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </div>
+        </div>
+        <div class="second" [ngClass]="{'active': isNavbarActive}">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Production</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>

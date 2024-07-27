@@ -5,6 +5,7 @@ import { AnimatedTextComponent } from './animated-text/animated-text.component';
 import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   {path:'card',component:ResponsiveCardComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'form',component:FormComponent},
   {path:'footer',component:FooterComponent},
   {path:'accordion',component:AccordionComponent},
+  {path:'header',component:HeaderComponent},
 ];
 
 @NgModule({

@@ -1,0 +1,66 @@
+.container {
+    background: linear-gradient(Blue, Purple);
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ham-burgur {
+    display: none;
+}
+
+ul {
+    gap: 30px;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+@media screen and (max-width:700px) {
+    .navbar .main {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar .second ul {
+        display: none;
+    }
+
+    .navbar .second.active ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .ham-burgur {
+        display: block;
+    }
+
+}
