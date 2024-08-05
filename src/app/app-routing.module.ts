@@ -8,16 +8,20 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { HeaderComponent } from './header/header.component';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 import { InputSearchBoxComponent } from './input-search-box/input-search-box.component';
+import { ResizeDashboardComponent } from './resize-dashboard/resize-dashboard.component';
+import { AnimatedBackgroundComponent } from './animated-background/animated-background.component';
 
 const routes: Routes = [
-  {path:'card',component:ResponsiveCardComponent},
-  {path:'animated',component:AnimatedTextComponent},
-  {path:'form',component:FormComponent},
-  {path:'footer',component:FooterComponent},
-  {path:'accordion',component:AccordionComponent},
-  {path:'header',component:HeaderComponent},
-  {path:'toggle',component:ToggleButtonComponent},
-  {path:'input-search',component:InputSearchBoxComponent},
+  { path: 'card', component: ResponsiveCardComponent },
+  { path: 'animated', component: AnimatedTextComponent },
+  { path: 'form', component: FormComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'accordion', component: AccordionComponent },
+  { path: 'header', component: HeaderComponent },
+  { path: 'toggle', component: ToggleButtonComponent },
+  { path: 'input-search', component: InputSearchBoxComponent },
+  { path: 'dashboard', component: ResizeDashboardComponent },
+  { path: 'background', component: AnimatedBackgroundComponent }
 ];
 
 @NgModule({
