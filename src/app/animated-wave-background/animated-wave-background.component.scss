@@ -1,0 +1,60 @@
+section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to right, orange, tomato);
+    overflow: hidden; 
+}
+
+.wave {
+    position: absolute;
+    width: 200%; 
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url('../../assets/wave.png') repeat-x;
+    animation: animate 10s linear infinite;
+}
+
+.wave::before {
+    content: '';
+    width: 200%; 
+    height: 143px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    background: url('../../assets/wave.png') repeat-x;
+    animation: animate-reverse 10s linear infinite;
+}
+
+.wave::after {
+    content: '';
+    width: 200%; 
+    height: 143px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    background: url('../../assets/wave.png') repeat-x;
+    animation: animate 20s linear infinite;
+    animation-delay: -5s;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -100%;
+    }
+}
+
+@keyframes animate-reverse {
+    0% {
+        background-position: -100%;
+    }
+    100% {
+        background-position: 0;
+    }
+}

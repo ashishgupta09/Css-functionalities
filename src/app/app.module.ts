@@ -21,6 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ResizeDashboardComponent } from './resize-dashboard/resize-dashboard.component';
 import { ResponsiveCardComponent } from './responsive-card/responsive-card.component';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
+import { AnimatedWaveBackgroundComponent } from './animated-wave-background/animated-wave-background.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
     InputSearchBoxComponent,
     ResizeDashboardComponent,
     ResizableDirective,
-    AnimatedBackgroundComponent
+    AnimatedBackgroundComponent,
+    AnimatedWaveBackgroundComponent
   ],
   imports: [
     BrowserModule,

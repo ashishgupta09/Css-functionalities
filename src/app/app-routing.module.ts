@@ -10,6 +10,7 @@ import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 import { InputSearchBoxComponent } from './input-search-box/input-search-box.component';
 import { ResizeDashboardComponent } from './resize-dashboard/resize-dashboard.component';
 import { AnimatedBackgroundComponent } from './animated-background/animated-background.component';
+import { AnimatedWaveBackgroundComponent } from './animated-wave-background/animated-wave-background.component';
 
 const routes: Routes = [
   { path: 'card', component: ResponsiveCardComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'toggle', component: ToggleButtonComponent },
   { path: 'input-search', component: InputSearchBoxComponent },
   { path: 'dashboard', component: ResizeDashboardComponent },
-  { path: 'background', component: AnimatedBackgroundComponent }
+  { path: 'background', component: AnimatedBackgroundComponent },
+  { path: 'wave', component: AnimatedWaveBackgroundComponent }
 ];
 
 @NgModule({
