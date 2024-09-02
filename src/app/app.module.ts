@@ -6,9 +6,9 @@ import { ResizableDirective } from 'src/directives/resizable.directive';
 import { AccordionComponent } from './accordion/accordion.component';
 import { AnimatedBackgroundComponent } from './animated-background/animated-background.component';
 import { AnimatedTextComponent } from './animated-text/animated-text.component';
+import { AnimatedWaveBackgroundComponent } from './animated-wave-background/animated-wave-background.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CarouselImageComponent } from './carousel-image/carousel-image.component';
 import { ColorAnimationButtonComponent } from './color-animation-button/color-animation-button.component';
 import { CustomTabComponent } from './custom-tab/custom-tab.component';
 import { FooterComponent } from './footer/footer.component';
@@ -17,20 +17,17 @@ import { GradientTextComponent } from './gradient-text/gradient-text.component';
 import { HeaderComponent } from './header/header.component';
 import { InputSearchBoxComponent } from './input-search-box/input-search-box.component';
 import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { ResizeDashboardComponent } from './resize-dashboard/resize-dashboard.component';
 import { ResponsiveCardComponent } from './responsive-card/responsive-card.component';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
-import { AnimatedWaveBackgroundComponent } from './animated-wave-background/animated-wave-background.component';
+import { CarousalComponent } from './carousal/carousal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    NavbarComponent,
     FooterComponent,
     ResponsiveCardComponent,
-    CarouselImageComponent,
     CustomTabComponent,
     LoadingAnimationComponent,
     ColorAnimationButtonComponent,
@@ -43,7 +40,8 @@ import { AnimatedWaveBackgroundComponent } from './animated-wave-background/anim
     ResizeDashboardComponent,
     ResizableDirective,
     AnimatedBackgroundComponent,
-    AnimatedWaveBackgroundComponent
+    AnimatedWaveBackgroundComponent,
+    CarousalComponent
   ],
   imports: [
     BrowserModule,

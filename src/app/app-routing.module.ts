@@ -11,6 +11,7 @@ import { InputSearchBoxComponent } from './input-search-box/input-search-box.com
 import { ResizeDashboardComponent } from './resize-dashboard/resize-dashboard.component';
 import { AnimatedBackgroundComponent } from './animated-background/animated-background.component';
 import { AnimatedWaveBackgroundComponent } from './animated-wave-background/animated-wave-background.component';
+import { CarousalComponent } from './carousal/carousal.component';
 
 const routes: Routes = [
   { path: 'card', component: ResponsiveCardComponent },
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'input-search', component: InputSearchBoxComponent },
   { path: 'dashboard', component: ResizeDashboardComponent },
   { path: 'background', component: AnimatedBackgroundComponent },
-  { path: 'wave', component: AnimatedWaveBackgroundComponent }
+  { path: 'wave', component: AnimatedWaveBackgroundComponent },
+  { path: 'carousel', component: CarousalComponent }
 ];
 
 @NgModule({
