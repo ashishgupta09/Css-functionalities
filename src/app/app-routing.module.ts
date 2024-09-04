@@ -12,6 +12,7 @@ import { ResizeDashboardComponent } from './resize-dashboard/resize-dashboard.co
 import { AnimatedBackgroundComponent } from './animated-background/animated-background.component';
 import { AnimatedWaveBackgroundComponent } from './animated-wave-background/animated-wave-background.component';
 import { CarousalComponent } from './carousal/carousal.component';
+import { TimeLineComponent } from './time-line/time-line.component';
 
 const routes: Routes = [
   { path: 'card', component: ResponsiveCardComponent },
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'dashboard', component: ResizeDashboardComponent },
   { path: 'background', component: AnimatedBackgroundComponent },
   { path: 'wave', component: AnimatedWaveBackgroundComponent },
-  { path: 'carousel', component: CarousalComponent }
+  { path: 'carousel', component: CarousalComponent },
+  { path: 'timeline', component: TimeLineComponent }
 ];
 
 @NgModule({

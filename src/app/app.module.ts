@@ -21,6 +21,7 @@ import { ResizeDashboardComponent } from './resize-dashboard/resize-dashboard.co
 import { ResponsiveCardComponent } from './responsive-card/responsive-card.component';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 import { CarousalComponent } from './carousal/carousal.component';
+import { TimeLineComponent } from './time-line/time-line.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { CarousalComponent } from './carousal/carousal.component';
     ResizableDirective,
     AnimatedBackgroundComponent,
     AnimatedWaveBackgroundComponent,
-    CarousalComponent
+    CarousalComponent,
+    TimeLineComponent
   ],
   imports: [
     BrowserModule,
