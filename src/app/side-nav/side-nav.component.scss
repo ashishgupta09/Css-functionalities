@@ -1,0 +1,109 @@
+.sidenav {
+    background: #263238;
+    transition: 0.3s all ease-in-out;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .log-container {
+        display: flex;
+        align-items: center;
+        padding: 18px 10px 0 10px;
+        width: 100%;
+    }
+
+    .logo {
+        background: #fff;
+        text-align: center;
+        width: 48px;
+        min-width: 48px;
+        border-radius: 5px;
+        font-size: 24px;
+        font-weight: 900;
+        cursor: pointer;
+        border: none;
+    }
+
+    .logo-text {
+        margin-left: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .btn-close {
+        margin-left: auto;
+        cursor: pointer;
+        width: 30px;
+        height: auto;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+
+        i {
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+}
+
+.sidenav-collapsed {
+    width: 80px;
+
+    .logo-text {
+        opacity: 0;
+    }
+
+    .sidenav-nav {
+        padding-left: 10px;
+    }
+}
+
+.sidenav-nav {
+    list-style: none;
+    padding: 20px 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 500px);
+
+    .sidenav-nav-item {
+        width: 100%;
+        padding: 0px 5px;
+        margin: 10px auto;
+
+        .sidenav-nav-icon {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 20px;
+            height: 40px;
+            color: #f3f3f3;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: color .3s all ease;
+
+            .sidenav-link-icon {
+                font-size: 22px;
+                width: 32px;
+                min-width: 32px;
+                text-align: center;
+            }
+
+            .sidenav-link-text {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .sidenav-nav-item:hover {
+        .sidenav-nav-icon {
+            background-color: #fff;
+            color: black;
+        }
+    }
+}

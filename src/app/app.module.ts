@@ -22,6 +22,8 @@ import { ResponsiveCardComponent } from './responsive-card/responsive-card.compo
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 import { CarousalComponent } from './carousal/carousal.component';
 import { TimeLineComponent } from './time-line/time-line.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { SidenavBodyComponent } from './sidenav-body/sidenav-body.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { TimeLineComponent } from './time-line/time-line.component';
     AnimatedBackgroundComponent,
     AnimatedWaveBackgroundComponent,
     CarousalComponent,
-    TimeLineComponent
+    TimeLineComponent,
+    SideNavComponent,
+    SidenavBodyComponent
   ],
   imports: [
     BrowserModule,
